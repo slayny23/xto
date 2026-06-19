@@ -1,0 +1,175 @@
+11:20:48.044563 IP 127.0.0.1.42908 > 127.0.0.1.8080: Flags [S], seq 1582503362, win 65495, options [mss 65495,sackOK,TS val 3586658031 ecr 0,nop,wscale 7], length 0
+E..<..@.@.$.............^S...........0.........
+............
+11:20:48.044582 IP 127.0.0.1.8080 > 127.0.0.1.42908: Flags [S.], seq 4106797423, ack 1582503363, win 65483, options [mss 65495,sackOK,TS val 3586658031 ecr 3586658031,nop,wscale 7], length 0
+E..<..@.@.<................o^S.......0.........
+............
+11:20:48.044589 IP 127.0.0.1.42908 > 127.0.0.1.8080: Flags [.], ack 1, win 512, options [nop,nop,TS val 3586658031 ecr 3586658031], length 0
+E..4..@.@.$.............^S.....p.....(.....
+........
+11:20:48.044625 IP 127.0.0.1.42908 > 127.0.0.1.8080: Flags [P.], seq 1:238, ack 1, win 512, options [nop,nop,TS val 3586658031 ecr 3586658031], length 237: HTTP: POST / HTTP/1.1
+E..!..@.@.#0............^S.....p...........
+........POST / HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/7.88.1
+Accept: */*
+Authorization: Basic dmFzeWE6TXlQYXNzd29yZDIwMjQ=
+Content-Length: 38
+Content-Type: application/x-www-form-urlencoded
+
+username=vasya&password=MyPassword2024
+11:20:48.044627 IP 127.0.0.1.8080 > 127.0.0.1.42908: Flags [.], ack 238, win 510, options [nop,nop,TS val 3586658031 ecr 3586658031], length 0
+E..4..@.@.^................p^S.......(.....
+........
+11:20:48.045846 IP 127.0.0.1.8080 > 127.0.0.1.42908: Flags [P.], seq 1:199, ack 238, win 512, options [nop,nop,TS val 3586658032 ecr 3586658031], length 198: HTTP: HTTP/1.0 501 Unsupported method ('POST')
+E.....@.@.^*...............p^S.............
+........HTTP/1.0 501 Unsupported method ('POST')
+Server: SimpleHTTP/0.6 Python/3.11.2
+Date: Fri, 19 Jun 2026 06:20:48 GMT
+Connection: close
+Content-Type: text/html;charset=utf-8
+Content-Length: 357
+
+
+11:20:48.045860 IP 127.0.0.1.42908 > 127.0.0.1.8080: Flags [.], ack 199, win 511, options [nop,nop,TS val 3586658032 ecr 3586658032], length 0
+E..4..@.@.$.............^S.....6.....(.....
+........
+11:20:48.045893 IP 127.0.0.1.8080 > 127.0.0.1.42908: Flags [P.], seq 199:556, ack 238, win 512, options [nop,nop,TS val 3586658032 ecr 3586658032], length 357: HTTP
+E.....@.@.]................6^S.............
+........<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Error response</title>
+    </head>
+    <body>
+        <h1>Error response</h1>
+        <p>Error code: 501</p>
+        <p>Message: Unsupported method ('POST').</p>
+        <p>Error code explanation: 501 - Server does not support this operation.</p>
+    </body>
+</html>
+
+11:20:48.045897 IP 127.0.0.1.42908 > 127.0.0.1.8080: Flags [.], ack 556, win 509, options [nop,nop,TS val 3586658032 ecr 3586658032], length 0
+E..4..@.@.$.............^S...........(.....
+........
+11:20:48.046089 IP 127.0.0.1.42908 > 127.0.0.1.8080: Flags [F.], seq 238, ack 556, win 512, options [nop,nop,TS val 3586658033 ecr 3586658032], length 0
+E..4..@.@.$.............^S...........(.....
+........
+11:20:48.046758 IP 127.0.0.1.8080 > 127.0.0.1.42908: Flags [F.], seq 556, ack 239, win 512, options [nop,nop,TS val 3586658033 ecr 3586658033], length 0
+E..4..@.@.^.................^S.......(.....
+........
+11:20:48.046766 IP 127.0.0.1.42908 > 127.0.0.1.8080: Flags [.], ack 557, win 512, options [nop,nop,TS val 3586658033 ecr 3586658033], length 0
+E..4..@.@.$.............^S...........(.....
+........
+11:22:39.504205 IP 127.0.0.1.58128 > 127.0.0.1.8080: Flags [S], seq 3033461962, win 65495, options [mss 65495,sackOK,TS val 3586769491 ecr 0,nop,wscale 7], length 0
+E..<..@.@............................0.........
+...S........
+11:22:39.504216 IP 127.0.0.1.8080 > 127.0.0.1.58128: Flags [S.], seq 293184616, ack 3033461963, win 65483, options [mss 65495,sackOK,TS val 3586769491 ecr 3586769491,nop,wscale 7], length 0
+E..<..@.@.<..............y.h.........0.........
+...S...S....
+11:22:39.504227 IP 127.0.0.1.58128 > 127.0.0.1.8080: Flags [.], ack 1, win 512, options [nop,nop,TS val 3586769491 ecr 3586769491], length 0
+E..4..@.@....................y.i.....(.....
+...S...S
+11:22:39.504499 IP 127.0.0.1.58128 > 127.0.0.1.8080: Flags [P.], seq 1:79, ack 1, win 512, options [nop,nop,TS val 3586769491 ecr 3586769491], length 78: HTTP: GET / HTTP/1.1
+E.....@.@..Y.................y.i.....v.....
+...S...SGET / HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/7.88.1
+Accept: */*
+
+
+11:22:39.504513 IP 127.0.0.1.8080 > 127.0.0.1.58128: Flags [.], ack 79, win 511, options [nop,nop,TS val 3586769491 ecr 3586769491], length 0
+E..4"O@.@..s.............y.i.........(.....
+...S...S
+11:22:39.505110 IP 127.0.0.1.8080 > 127.0.0.1.58128: Flags [P.], seq 1:157, ack 79, win 512, options [nop,nop,TS val 3586769492 ecr 3586769491], length 156: HTTP: HTTP/1.0 200 OK
+E..."P@.@................y.i...............
+...T...SHTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.11.2
+Date: Fri, 19 Jun 2026 06:22:39 GMT
+Content-type: text/html; charset=utf-8
+Content-Length: 2366
+
+
+11:22:39.505128 IP 127.0.0.1.58128 > 127.0.0.1.8080: Flags [.], ack 157, win 511, options [nop,nop,TS val 3586769492 ecr 3586769492], length 0
+E..4..@.@....................y.......(.....
+...T...T
+11:22:39.505165 IP 127.0.0.1.8080 > 127.0.0.1.58128: Flags [P.], seq 157:2523, ack 79, win 512, options [nop,nop,TS val 3586769492 ecr 3586769492], length 2366: HTTP
+E.	r"Q@.@..3.............y...........g.....
+...T...T<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Directory listing for /</title>
+</head>
+<body>
+<h1>Directory listing for /</h1>
+<hr>
+<ul>
+<li><a href=".font-unix/">.font-unix/</a></li>
+<li><a href=".ICE-unix/">.ICE-unix/</a></li>
+<li><a href=".X0-lock">.X0-lock</a></li>
+<li><a href=".X1-lock">.X1-lock</a></li>
+<li><a href=".X1024-lock">.X1024-lock</a></li>
+<li><a href=".X1025-lock">.X1025-lock</a></li>
+<li><a href=".X11-unix/">.X11-unix/</a></li>
+<li><a href=".XIM-unix/">.XIM-unix/</a></li>
+<li><a href="systemd-private-265ba099bde94f1da8acf73c22c7aa51-colord.service-XhrgMC/">systemd-private-265ba099bde94f1da8acf73c22c7aa51-colord.service-XhrgMC/</a></li>
+<li><a href="systemd-private-265ba099bde94f1da8acf73c22c7aa51-low-memory-monitor.service-5YoTml/">systemd-private-265ba099bde94f1da8acf73c22c7aa51-low-memory-monitor.service-5YoTml/</a></li>
+<li><a href="systemd-private-265ba099bde94f1da8acf73c22c7aa51-ModemManager.service-cyunbI/">systemd-private-265ba099bde94f1da8acf73c22c7aa51-ModemManager.service-cyunbI/</a></li>
+<li><a href="systemd-private-265ba099bde94f1da8acf73c22c7aa51-power-profiles-daemon.service-I56mWe/">systemd-private-265ba099bde94f1da8acf73c22c7aa51-power-profiles-daemon.service-I56mWe/</a></li>
+<li><a href="systemd-private-265ba099bde94f1da8acf73c22c7aa51-switcheroo-control.service-PxVWas/">systemd-private-265ba099bde94f1da8acf73c22c7aa51-switcheroo-control.service-PxVWas/</a></li>
+<li><a href="systemd-private-265ba099bde94f1da8acf73c22c7aa51-systemd-logind.service-EArlFE/">systemd-private-265ba099bde94f1da8acf73c22c7aa51-systemd-logind.service-EArlFE/</a></li>
+<li><a href="systemd-private-265ba099bde94f1da8acf73c22c7aa51-systemd-timesyncd.service-2aTtoO/">systemd-private-265ba099bde94f1da8acf73c22c7aa51-systemd-timesyncd.service-2aTtoO/</a></li>
+<li><a href="systemd-private-265ba099bde94f1da8acf73c22c7aa51-upower.service-XJow3x/">systemd-private-265ba099bde94f1da8acf73c22c7aa51-upower.service-XJow3x/</a></li>
+<li><a href="totally-not-malware.sh">totally-not-malware.sh</a></li>
+<li><a href="tracker-extract-3-files.1000/">tracker-extract-3-files.1000/</a></li>
+<li><a href="tracker-extract-3-files.111/">tracker-extract-3-files.111/</a></li>
+<li><a href="vmware-root_443-1815481284/">vmware-root_443-1815481284/</a></li>
+<li><a href="VMwareDnD/">VMwareDnD/</a></li>
+</ul>
+<hr>
+</body>
+</html>
+
+11:22:39.505174 IP 127.0.0.1.58128 > 127.0.0.1.8080: Flags [.], ack 2523, win 498, options [nop,nop,TS val 3586769492 ecr 3586769492], length 0
+E..4..@.@....................y.C.....(.....
+...T...T
+11:22:39.505194 IP 127.0.0.1.8080 > 127.0.0.1.58128: Flags [F.], seq 2523, ack 79, win 512, options [nop,nop,TS val 3586769492 ecr 3586769492], length 0
+E..4"R@.@..p.............y.C.........(.....
+...T...T
+11:22:39.505334 IP 127.0.0.1.58128 > 127.0.0.1.8080: Flags [F.], seq 79, ack 2524, win 512, options [nop,nop,TS val 3586769492 ecr 3586769492], length 0
+E..4..@.@....................y.D.....(.....
+...T...T
+11:22:39.505342 IP 127.0.0.1.8080 > 127.0.0.1.58128: Flags [.], ack 80, win 512, options [nop,nop,TS val 3586769492 ecr 3586769492], length 0
+E..4"S@.@..o.............y.D.........(.....
+...T...T
+11:22:45.825935 IP 127.0.0.1.58144 > 127.0.0.1.8080: Flags [S], seq 709831769, win 65495, options [mss 65495,sackOK,TS val 3586775812 ecr 0,nop,wscale 7], length 0
+E..<..@.@............ ..*O,Y.........0.........
+............
+11:22:45.825942 IP 127.0.0.1.8080 > 127.0.0.1.58144: Flags [S.], seq 2586202408, ack 709831770, win 65483, options [mss 65495,sackOK,TS val 3586775812 ecr 3586775812,nop,wscale 7], length 0
+E..<..@.@.<............ .&Q(*O,Z.....0.........
+............
+11:22:45.825949 IP 127.0.0.1.58144 > 127.0.0.1.8080: Flags [.], ack 1, win 512, options [nop,nop,TS val 3586775812 ecr 3586775812], length 0
+E..4..@.@............ ..*O,Z.&Q).....(.....
+........
+11:22:45.826155 IP 127.0.0.1.58144 > 127.0.0.1.8080: Flags [P.], seq 1:79, ack 1, win 512, options [nop,nop,TS val 3586775813 ecr 3586775812], length 78: HTTP: GET / HTTP/1.1
+E.....@.@..U......... ..*O,Z.&Q).....v.....
+........GET / HTTP/1.1
+Host: localhost:8080
+User-Agent: curl/7.88.1
+Accept: */*
+
+
+11:22:45.826176 IP 127.0.0.1.8080 > 127.0.0.1.58144: Flags [.], ack 79, win 511, options [nop,nop,TS val 3586775813 ecr 3586775813], length 0
+E..4..@.@.............. .&Q)*O,......(.....
+........
+11:22:45.826623 IP 127.0.0.1.8080 > 127.0.0.1.58144: Flags [P.], seq 1:157, ack 79, win 512, options [nop,nop,TS val 3586775813 ecr 3586775813], length 156: HTTP: HTTP/1.0 200 OK
+E.....@.@..;........... .&Q)*O,............
+........HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.11.2
+Date: Fri, 19 Jun 2026 06:22:45 GMT
+Content-type: text/html; charset=utf-8
+Content-Length: 2366
+
+
