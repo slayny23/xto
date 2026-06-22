@@ -1,3 +1,8 @@
+<!--
+SPDX-FileCopyrightText: 2024 slayny23 <park243@mail.ru>
+SPDX-License-Identifier: MIT
+-->
+
 Вот команда — вставь её целиком в терминал, она создаст готовый report.md со всеми собранными данными:
 bashcat > ~/xto/pr09/report.md << 'REPORT'
 # ПР №9. Следы вредоносного ПО в Linux
