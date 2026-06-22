@@ -1,0 +1,33 @@
+name: License Check
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  licensee:
+    name: Check repository license
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install licensee
+        run: gem install licensee
+
+      - name: Detect license
+        run: |
+          licensee detect .
+          echo "License check passed"
+
+  reuse:
+    name: REUSE compliance check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: REUSE compliance check
+        uses: fsfe/reuse-action@v3

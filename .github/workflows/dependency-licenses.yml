@@ -1,0 +1,43 @@
+name: Dependency License Check
+
+on:
+  push:
+    paths:
+      - '**/requirements.txt'
+
+jobs:
+  check-licenses:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install pip-licenses
+        run: pip install pip-licenses
+
+      - name: Check if requirements.txt exists
+        id: check_req
+        run: |
+          if [ -f "pr10/demo-project/requirements.txt" ]; then
+            echo "exists=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Install dependencies and check licenses
+        if: steps.check_req.outputs.exists == 'true'
+        run: |
+          pip install -r pr10/demo-project/requirements.txt
+          echo "## Dependency Licenses" >> $GITHUB_STEP_SUMMARY
+          pip-licenses --format=markdown >> $GITHUB_STEP_SUMMARY
+
+      - name: Check for GPL licenses
+        if: steps.check_req.outputs.exists == 'true'
+        run: |
+          if pip-licenses | grep -E "GNU General Public License|AGPL"; then
+            echo "WARNING: GPL/AGPL licensed dependencies found!"
+          else
+            echo "No copyleft licenses found"
+          fi
